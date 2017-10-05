@@ -1,0 +1,24 @@
+<html>
+<head>
+<title> Game Over </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+	var gameover_text = new sjs.Text("DOH! Sorry, You Lose.",100,"red");
+	var restartBtn = new sjs.Button("Main Menu", function(){
+	window.location = "index.html";
+	});
+	restartBtn.center().bottom();
+	//Sounds
+	var soundEffect = new Audio('Music/doh.mp3');
+	soundEffect.play();
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Game Over! </h1>
+
+<div id="target" style="margin:auto;background:green;"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+	sjs.open();
+	var menu_text = new sjs.Text("MENU",25,"black");
+	menu_text.centerH();
+	var startBtnp1 = new sjs.Button("Start person:1", function(){
+		window.location = "pong.html";
+	});
+	startBtnp1.center().offset(0,50);
+
+	var startBtnp2 = new sjs.Button("Start person:2", function(){
+		window.location = "pong - 2 person.html";
+	});
+	startBtnp2.center().offset(0,100);
+
+	var info_text = new sjs.Text("Created By Sam O. Hurwitz",20,"black");
+	info_text.bottom().centerH();
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+<div id="target" style="margin:auto;background:yellow;"></div>
+</body>
+</html>
