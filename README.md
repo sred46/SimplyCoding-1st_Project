@@ -1,1 +1,1 @@
-# SimplyCoding-1st_Project
+open with index.html
